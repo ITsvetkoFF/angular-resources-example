@@ -1,0 +1,25 @@
+<h2>Details about {{repo}}</h2>
+
+
+<button ng-click="updateLabels()">Change labels!</button> <span ng-show="updated">Updating. Remained {{updated}} of {{updating}}</span>
+<br>
+<br>
+<div ng-repeat="issue in issues">
+
+    <label>Title:</label>
+    <div class="input-group" style = "width:100%">
+        <textarea ng-model="issue.title" placeholder="Issue title" class="form-control"></textarea>
+    </div>
+    <br>
+    <label>Labels:</label>
+    <div class="input-group">
+        <button type="button" class="btn btn-default" ng-model="issue.labels" data-multiple="1"
+                data-max-length="6" bs-options="label.name for label in labels" bs-select>
+            Action <span class="caret"></span>
+        </button>
+    </div>
+
+    <hr>
+</div>
+
+

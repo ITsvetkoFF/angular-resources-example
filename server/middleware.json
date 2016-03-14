@@ -22,7 +22,12 @@
       ]
     }
   },
-  "files": {},
+  "files": {
+    "loopback#static": {
+      "paths": "/dashboard",
+      "params": "$!../client"
+    }
+  },
   "final": {
     "loopback#urlNotFound": {}
   },

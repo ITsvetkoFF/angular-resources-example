@@ -19,11 +19,9 @@
     "loopback-boot": "^2.0.0",
     "loopback-component-passport": "^1.5.0",
     "passport": "^0.2.0",
-    "passport-facebook": "^1.0.3",
-    "passport-google-oauth": "^0.1.5",
+    "passport-github2": "^0.1.10",
     "passport-local": "^1.0.0",
     "passport-oauth2": "^1.1.2",
-    "passport-twitter": "^1.0.2",
     "serve-favicon": "^2.0.1",
     "loopback-component-explorer": "^2.1.0"
   },

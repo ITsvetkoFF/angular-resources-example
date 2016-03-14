@@ -143,6 +143,10 @@ app.get('/login', function (req, res, next){
    });
 });
 
+app.get('/api/github/token', function (req, res, next){
+  res.send(req.user);
+});
+
 app.get('/auth/logout', function (req, res, next) {
   req.logout();
   res.redirect('/');
